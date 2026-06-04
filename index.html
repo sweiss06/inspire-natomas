@@ -210,6 +210,73 @@ footer{background:var(--purple-dark);color:rgba(255,255,255,.85);padding:64px 24
   .mission-grid > div:first-child{max-width:100% !important;}
 }
 
+
+/* ── COLLAGE PHOTO HERO — 2 photos desktop, 1 photo mobile ── */
+.photo-hero {
+  position:relative;
+  overflow:hidden;
+  min-height:320px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+/* Desktop: two photo panels side by side */
+.photo-hero-bg {
+  position:absolute;
+  inset:0;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+}
+.photo-hero-bg .ph-left,
+.photo-hero-bg .ph-right {
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center 20%;
+}
+/* On mobile: show only left photo, full width */
+@media(max-width:640px) {
+  .photo-hero-bg { grid-template-columns:1fr; }
+  .photo-hero-bg .ph-right { display:none; }
+  .photo-hero { min-height:240px; }
+}
+.photo-hero-overlay {
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to bottom,
+    rgba(45,18,98,.72) 0%,
+    rgba(45,18,98,.55) 45%,
+    rgba(45,18,98,.78) 100%
+  );
+}
+.photo-hero-content {
+  position:relative;
+  z-index:2;
+  text-align:center;
+  padding:52px 24px 44px;
+  width:100%;
+}
+.photo-hero-content .pill-label {
+  background:rgba(251,191,36,.22);
+  color:var(--yellow);
+  border:1px solid rgba(251,191,36,.35);
+  margin-bottom:14px;
+}
+.photo-hero-content h1 {
+  font-size:clamp(28px,5vw,52px);
+  color:#fff;
+  text-shadow:0 2px 16px rgba(0,0,0,.4);
+  margin-bottom:10px;
+}
+.photo-hero-content h1 span { color:var(--yellow); }
+.photo-hero-content p {
+  color:rgba(255,255,255,.9);
+  font-size:17px;
+  max-width:520px;
+  margin:0 auto;
+  text-shadow:0 1px 8px rgba(0,0,0,.35);
+}
+
 </style>
 </head>
 <body>
@@ -314,8 +381,11 @@ footer{background:var(--purple-dark);color:rgba(255,255,255,.85);padding:64px 24
 
 <!-- PROGRAMS -->
 <div class="page" id="page-programs">
-  <div class="photo-hero">
-    <div class="photo-hero-bg" style="background-image:url('RegisterEarly.jpg');background-position:center 30%;"></div>
+    <div class="photo-hero">
+    <div class="photo-hero-bg">
+      <div class="ph-left" style="background-image:url('InspireGardening.JPEG');"></div>
+      <div class="ph-right" style="background-image:url('Preschool_Drawing.JPEG');"></div>
+    </div>
     <div class="photo-hero-overlay"></div>
     <div class="photo-hero-content">
       <span class="pill-label">2026–2027 Enrollment</span>
@@ -351,8 +421,11 @@ footer{background:var(--purple-dark);color:rgba(255,255,255,.85);padding:64px 24
 
 <!-- SUMMER -->
 <div class="page" id="page-summer">
-  <div class="photo-hero">
-    <div class="photo-hero-bg" style="background-image:url('summercamps.jpg');background-position:center 40%;"></div>
+    <div class="photo-hero">
+    <div class="photo-hero-bg">
+      <div class="ph-left" style="background-image:url('InspireSummerCamp.JPEG');"></div>
+      <div class="ph-right" style="background-image:url('Reading.JPEG');"></div>
+    </div>
     <div class="photo-hero-overlay"></div>
     <div class="photo-hero-content">
       <span class="pill-label">June – August 2026</span>
@@ -396,8 +469,11 @@ footer{background:var(--purple-dark);color:rgba(255,255,255,.85);padding:64px 24
 
 <!-- STAFF -->
 <div class="page" id="page-staff">
-  <div class="photo-hero">
-    <div class="photo-hero-bg" style="background-image:url('staff2.jpg');background-position:center 15%;"></div>
+    <div class="photo-hero">
+    <div class="photo-hero-bg">
+      <div class="ph-left" style="background-image:url('staff2.jpg');"></div>
+      <div class="ph-right" style="background-image:url('staff3.jpg');"></div>
+    </div>
     <div class="photo-hero-overlay"></div>
     <div class="photo-hero-content">
       <span class="pill-label">Meet the Team</span>
@@ -431,8 +507,11 @@ footer{background:var(--purple-dark);color:rgba(255,255,255,.85);padding:64px 24
 
 <!-- PHILOSOPHY -->
 <div class="page" id="page-philosophy">
-  <div class="photo-hero">
-    <div class="photo-hero-bg" style="background-image:url('slideshowImage_1059.jpg');background-position:center 25%;"></div>
+    <div class="photo-hero">
+    <div class="photo-hero-bg">
+      <div class="ph-left" style="background-image:url('Learning.JPEG');"></div>
+      <div class="ph-right" style="background-image:url('Inspirediscover.JPEG');"></div>
+    </div>
     <div class="photo-hero-overlay"></div>
     <div class="photo-hero-content">
       <span class="pill-label">What We Believe</span>
@@ -475,8 +554,11 @@ footer{background:var(--purple-dark);color:rgba(255,255,255,.85);padding:64px 24
 
 <!-- CONTACT -->
 <div class="page" id="page-contact">
-  <div class="photo-hero">
-    <div class="photo-hero-bg" style="background-image:url('staff3.jpg');background-position:center 20%;"></div>
+    <div class="photo-hero">
+    <div class="photo-hero-bg">
+      <div class="ph-left" style="background-image:url('InspireBubbles.JPEG');"></div>
+      <div class="ph-right" style="background-image:url('PreschoolFriends.JPEG');"></div>
+    </div>
     <div class="photo-hero-overlay"></div>
     <div class="photo-hero-content">
       <span class="pill-label">We'd Love to Hear From You</span>
