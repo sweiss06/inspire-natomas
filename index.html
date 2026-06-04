@@ -33,14 +33,14 @@ nav{position:sticky;top:0;z-index:1000;background:var(--purple-dark);height:var(
 .page.active{display:block}
 .wrap{max-width:1100px;margin:0 auto;padding:0 28px}
 .sec{padding-top:60px;padding-bottom:60px}
-.photo-hero{position:relative;overflow:hidden;min-height:300px;display:flex;align-items:center;justify-content:center}
-.photo-hero-bg{position:absolute;inset:0;background-size:cover;background-repeat:no-repeat}
-.photo-hero-overlay{position:absolute;inset:0;background:linear-gradient(to bottom,rgba(45,18,98,.75) 0%,rgba(45,18,98,.62) 45%,rgba(45,18,98,.82) 100%)}
-.photo-hero-content{position:relative;z-index:2;text-align:center;padding:56px 24px 48px;width:100%}
-.photo-hero-content .pill-label{background:rgba(251,191,36,.22);color:var(--yellow);border:1px solid rgba(251,191,36,.35);margin-bottom:14px}
-.photo-hero-content h1{font-size:clamp(30px,5vw,52px);color:#fff;text-shadow:0 2px 16px rgba(0,0,0,.35);margin-bottom:10px}
-.photo-hero-content h1 span{color:var(--yellow)}
-.photo-hero-content p{color:rgba(255,255,255,.88);font-size:17px;max-width:520px;margin:0 auto}
+
+
+
+
+
+
+
+
 .home-hero{position:relative;width:100%;min-height:380px;overflow:hidden;background:var(--purple-dark)}
 .hero-bg{position:absolute;inset:0;background-image:url('Inspirekid.jpg');background-size:cover;background-position:20% center}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(to right,rgba(45,18,98,.5) 0%,rgba(45,18,98,.7) 50%,rgba(45,18,98,.88) 100%)}
@@ -58,7 +58,7 @@ nav{position:sticky;top:0;z-index:1000;background:var(--purple-dark);height:var(
 .feat-card{background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow);border:2px solid var(--border);transition:transform .25s,box-shadow .25s}
 .feat-card:hover{transform:translateY(-5px);box-shadow:var(--shadow-lg)}
 .feat-img{width:100%;aspect-ratio:4/3;overflow:hidden}
-.feat-img img{width:100%;height:100%;object-fit:cover;object-position:center;transition:transform .4s;display:block}
+.feat-img img{width:100%;height:100%;object-fit:cover;object-position:center 20%;transition:transform .4s;display:block}
 .feat-card:hover .feat-img img{transform:scale(1.05)}
 .feat-card:nth-child(2){transform:translateY(-16px) scale(1.02);box-shadow:0 12px 40px rgba(74,29,150,.18);z-index:2;position:relative}
 .feat-card:nth-child(2):hover{transform:translateY(-22px) scale(1.02)}
@@ -202,7 +202,7 @@ footer{background:var(--purple-dark);color:rgba(255,255,255,.85);padding:64px 24
 .f-social:hover{background:rgba(255,255,255,.25);transform:scale(1.1)}
 .footer-bottom{max-width:1100px;margin:0 auto;border-top:1px solid rgba(255,255,255,.15);padding-top:26px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;font-size:14px;opacity:.6}
 @media(max-width:900px){.nav-pills{display:none;flex-direction:column;position:absolute;top:var(--nav-h);left:0;right:0;background:var(--purple-dark);padding:16px 20px 20px;gap:8px;box-shadow:0 8px 20px rgba(0,0,0,.3);z-index:999}.nav-pills.open{display:flex}.nav-pill{width:100%;max-width:100%;text-align:center}.hamburger{display:flex}nav{position:relative}.split{grid-template-columns:1fr!important;direction:ltr!important;gap:28px}.split.rev{direction:ltr}.features-row{grid-template-columns:1fr}.feat-card:nth-child(2){transform:none}.contact-grid{grid-template-columns:1fr}.form-row{grid-template-columns:1fr}.footer-inner{grid-template-columns:1fr;gap:32px}.purple-banner{padding:36px 24px}}
-@media(max-width:600px){.home-hero{min-height:300px}.hero-content{min-height:300px;padding:32px 20px;gap:14px}.hero-headline{font-size:clamp(28px,8vw,40px)!important}.photo-hero{min-height:220px}.photo-hero-content{padding:40px 20px 36px}.photo-hero-content h1{font-size:clamp(26px,8vw,38px)}.staff-trio{display:none}.trio-mobile{display:block;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-lg);margin-bottom:48px}.trio-mobile img{width:100%;display:block;max-height:280px;object-fit:cover;object-position:center 20%}.staff-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:auto}.gallery-item:nth-child(1){grid-row:auto;min-height:unset;aspect-ratio:4/3}.ig-photo-grid{grid-template-columns:repeat(3,1fr)}.ig-tile:nth-child(4),.ig-tile:nth-child(5){display:none}.schedule-grid{grid-template-columns:1fr}.belief-grid{grid-template-columns:1fr}.wrap{padding:0 16px}.sec{padding-top:44px;padding-bottom:44px}.footer-inner{grid-template-columns:1fr}footer{padding:48px 20px 28px}.contact-form-card{padding:22px 16px}.purple-banner{padding:28px 18px}}
+@media(max-width:600px){.home-hero{min-height:300px}.hero-content{min-height:300px;padding:32px 20px;gap:14px}.hero-headline{font-size:clamp(28px,8vw,40px)!important}.staff-trio{display:none}.trio-mobile{display:block;border-radius:var(--r);overflow:hidden;box-shadow:var(--shadow-lg);margin-bottom:48px}.trio-mobile img{width:100%;display:block;max-height:280px;object-fit:cover;object-position:center 20%}.staff-grid{grid-template-columns:repeat(2,1fr)}.gallery-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:auto}.gallery-item:nth-child(1){grid-row:auto;min-height:unset;aspect-ratio:4/3}.ig-photo-grid{grid-template-columns:repeat(3,1fr)}.ig-tile:nth-child(4),.ig-tile:nth-child(5){display:none}.schedule-grid{grid-template-columns:1fr}.belief-grid{grid-template-columns:1fr}.wrap{padding:0 16px}.sec{padding-top:44px;padding-bottom:44px}.footer-inner{grid-template-columns:1fr}footer{padding:48px 20px 28px}.contact-form-card{padding:22px 16px}.purple-banner{padding:28px 18px}}
 
 /* Mission grid — collapses to single column on mobile */
 @media(max-width:640px){
@@ -277,6 +277,86 @@ footer{background:var(--purple-dark);color:rgba(255,255,255,.85);padding:64px 24
   text-shadow:0 1px 8px rgba(0,0,0,.35);
 }
 
+
+@media(max-width:600px) {
+  .photo-hero { padding: 44px 20px 40px; min-height: 200px; }
+  .photo-hero-content h1 { font-size: clamp(26px,8vw,38px); }
+  .photo-hero-content p { font-size: 15px; }
+}
+
+
+
+@media(max-width:640px){}
+
+
+/* ══ PHOTO HERO BANNERS ══ */
+.photo-hero{
+  position:relative;
+  overflow:hidden;
+  min-height:300px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.photo-hero-bg{
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+  transform:scale(1.05);
+  transition:transform 8s ease;
+}
+.photo-hero:hover .photo-hero-bg{
+  transform:scale(1.08);
+}
+.photo-hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to bottom,
+    rgba(45,18,98,.70) 0%,
+    rgba(45,18,98,.55) 40%,
+    rgba(45,18,98,.78) 100%
+  );
+}
+.photo-hero-content{
+  position:relative;
+  z-index:2;
+  text-align:center;
+  padding:60px 24px 52px;
+  width:100%;
+  max-width:700px;
+}
+.photo-hero-content .pill-label{
+  background:rgba(251,191,36,.22);
+  color:var(--yellow);
+  border:1px solid rgba(251,191,36,.4);
+  margin-bottom:16px;
+  display:inline-block;
+}
+.photo-hero-content h1{
+  font-size:clamp(30px,5vw,54px);
+  color:#fff;
+  margin-bottom:12px;
+  text-shadow:0 2px 20px rgba(0,0,0,.4);
+}
+.photo-hero-content h1 span{color:var(--yellow);}
+.photo-hero-content p{
+  color:rgba(255,255,255,.9);
+  font-size:17px;
+  max-width:500px;
+  margin:0 auto;
+  line-height:1.6;
+  text-shadow:0 1px 6px rgba(0,0,0,.3);
+}
+@media(max-width:600px){
+  .photo-hero{min-height:220px;}
+  .photo-hero-content{padding:44px 20px 40px;}
+  .photo-hero-content h1{font-size:clamp(26px,8vw,36px);}
+  .photo-hero-content p{font-size:15px;}
+}
+
 </style>
 </head>
 <body>
@@ -311,9 +391,9 @@ footer{background:var(--purple-dark);color:rgba(255,255,255,.85);padding:64px 24
   </div>
   <div class="wrap sec">
     <div class="features-row">
-      <div class="feat-card"><div class="feat-img"><img src="FamilyAtmosphere.jpg" alt="Children at Inspire" loading="lazy"></div><div class="feat-body"><span class="feat-tag">Family First</span><h3>A Family Atmosphere</h3><p>Walk through our doors and you'll immediately feel at home. Small class sizes mean every child gets focused care. <em>Hablamos Español!</em></p></div></div>
-      <div class="feat-card"><div class="feat-img"><img src="loveforlearning.jpg" alt="Finger painting at Inspire" loading="lazy"></div><div class="feat-body"><span class="feat-tag">STEAM Learning</span><h3>We Build a Love for Learning</h3><p>Inquiry-based learning, STEAM curriculum, and guided play combine to ignite a passion for discovery your child will carry for life.</p></div></div>
-      <div class="feat-card"><div class="feat-img"><img src="cherishthememorable.jpg" alt="Celebrating at Inspire" loading="lazy"></div><div class="feat-body"><span class="feat-tag">Community</span><h3>We Cherish Memorable Moments</h3><p>From student Art Galas to Fun Runs at the Sacramento Zoo — your child will love being part of the Natomas community.</p></div></div>
+      <div class="feat-card"><div class="feat-img"><img src="PreschoolFriends.JPEG" alt="Preschool friends at Inspire" loading="lazy"></div><div class="feat-body"><span class="feat-tag">Family First</span><h3>A Family Atmosphere</h3><p>Walk through our doors and you'll immediately feel at home. Small class sizes mean every child gets focused care. <em>Hablamos Español!</em></p></div></div>
+      <div class="feat-card"><div class="feat-img"><img src="Learning.JPEG" alt="Child with magnifying glass at Inspire" loading="lazy"></div><div class="feat-body"><span class="feat-tag">STEAM Learning</span><h3>We Build a Love for Learning</h3><p>Inquiry-based learning, STEAM curriculum, and guided play combine to ignite a passion for discovery your child will carry for life.</p></div></div>
+      <div class="feat-card"><div class="feat-img"><img src="InspireBubbles.JPEG" alt="Child with bubbles at Inspire playground" loading="lazy"></div><div class="feat-body"><span class="feat-tag">Community</span><h3>We Cherish Memorable Moments</h3><p>From student Art Galas to Fun Runs at the Sacramento Zoo — your child will love being part of the Natomas community.</p></div></div>
     </div>
   </div>
   <div class="wrap" style="margin-bottom:60px;">
@@ -383,7 +463,7 @@ footer{background:var(--purple-dark);color:rgba(255,255,255,.85);padding:64px 24
 <div class="page" id="page-programs">
     <div class="photo-hero">
     <div class="photo-hero-bg">
-      <div class="ph-left" style="background-image:url('InspireGardening.JPEG');"></div>
+      <div class="ph-left" style="background-image:url('slideshowImage_1059.jpg');background-position:center 30%;"></div>
       <div class="ph-right" style="background-image:url('Preschool_Drawing.JPEG');"></div>
     </div>
     <div class="photo-hero-overlay"></div>
@@ -423,7 +503,7 @@ footer{background:var(--purple-dark);color:rgba(255,255,255,.85);padding:64px 24
 <div class="page" id="page-summer">
     <div class="photo-hero">
     <div class="photo-hero-bg">
-      <div class="ph-left" style="background-image:url('InspireSummerCamp.JPEG');"></div>
+      <div class="ph-left" style="background-image:url('slideshowImage_1061.jpg');background-position:center 40%;"></div>
       <div class="ph-right" style="background-image:url('Reading.JPEG');"></div>
     </div>
     <div class="photo-hero-overlay"></div>
@@ -471,7 +551,7 @@ footer{background:var(--purple-dark);color:rgba(255,255,255,.85);padding:64px 24
 <div class="page" id="page-staff">
     <div class="photo-hero">
     <div class="photo-hero-bg">
-      <div class="ph-left" style="background-image:url('staff2.jpg');"></div>
+      <div class="ph-left" style="background-image:url('staff1.jpg');background-position:center 25%;"></div>
       <div class="ph-right" style="background-image:url('staff3.jpg');"></div>
     </div>
     <div class="photo-hero-overlay"></div>
@@ -509,7 +589,7 @@ footer{background:var(--purple-dark);color:rgba(255,255,255,.85);padding:64px 24
 <div class="page" id="page-philosophy">
     <div class="photo-hero">
     <div class="photo-hero-bg">
-      <div class="ph-left" style="background-image:url('Learning.JPEG');"></div>
+      <div class="ph-left" style="background-image:url('slideshowImage_1060.jpg');background-position:center 30%;"></div>
       <div class="ph-right" style="background-image:url('Inspirediscover.JPEG');"></div>
     </div>
     <div class="photo-hero-overlay"></div>
@@ -556,7 +636,7 @@ footer{background:var(--purple-dark);color:rgba(255,255,255,.85);padding:64px 24
 <div class="page" id="page-contact">
     <div class="photo-hero">
     <div class="photo-hero-bg">
-      <div class="ph-left" style="background-image:url('InspireBubbles.JPEG');"></div>
+      <div class="ph-left" style="background-image:url('staff3.jpg');background-position:center 20%;"></div>
       <div class="ph-right" style="background-image:url('PreschoolFriends.JPEG');"></div>
     </div>
     <div class="photo-hero-overlay"></div>
